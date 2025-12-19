@@ -6,26 +6,46 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" >
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <style>
     .font-garamond { font-family: 'EB Garamond', serif; }
     .font-inter {font-family: 'Inter' }
   </style>
 </head>
 
+
+
+
 <body class="bg-gradient-to-r from-slate-950 to-gray-900">
-  <header class="bg-gradient-to-r from-blue-950 to-violet-800 to-indigo-900 m-2 rounded-lg shadow-[0_0_40px_rgba(79,70,229,0.7)]">
+  <header class="bg-gradient-to-r from-blue-950 to-violet-800 to-indigo-900">
     <div class="font-garamond">
-      <h1 class="py-2 text-white text-center text-7xl drop-shadow-[0_0_12px_rgba(99,102,241,0.8)]">Dawnyx Band</h1>
-      <h1 class=" py-1 text-lg text-yellow-500 text-center">Shape your nights.       Choose your mornings.</h1>
-      <div class="py-5 text-lg text-white flex justify-between">
-        <span>Overview</span>
-        <span>Features</span>
-        <span>Materials</span>
-      </div>
+      <h1 class="py-2 text-white text-center text-8xl drop-shadow-[0_0_12px_rgba(255,255,255,0.6)]">Dawnyx Band</h1>
+      <h1 class=" py-1 text-xl text-yellow-500 text-center">Shape your nights.       Choose your mornings.</h1>
+      <nav class="mt-4">
+        <div class="flex justify-between gap-12 px-12 py-2 text-lg font-inter text-white/80 bg-slate-700">
+          <a href="#Overview" class="hover:text-white transition-colors duration-200">
+            Overview
+          </a>
+          <a href="#Features" class="hover:text-white transition-colors duration-200">
+            Features
+          </a>
+          <a href="#Benefits" class="hover:text-white transition-colors duration-200">
+            Benefits
+          </a>
+          <a href="" class="hover:text-white transition-colors duration-200">
+            Materials
+          </a>
+        </div>
+      </nav>
     </div>
   </header>
+
+
+
+
   <section>
-    <div class="relative rounded-b-[3rem] overflow-hidden drop-shadow-[0_0_12px_rgba(0,0,0,1)]">
+    <div class="relative overflow-hidden drop-shadow-[0_12px_10px_rgba(0,0,0,0.8)]" id="Overview">
 
       <img
         src="Dawnyx Watchface Banner.png"
@@ -33,13 +53,185 @@
         class=""
       >
 
-      <div class="absolute inset-0 bg-gradient-to-b from-black/0 to-black/90 pointer-events-none"></div>
+      <div class="absolute inset-0 bg-gradient-to-b from-black/0 to-black/95 pointer-events-none"></div>
     </div>
   </section>
+
+
+
+
   <div class="py-12 text-center text-white text-lg break-words overflow-hidden mx-24">
-    <p class="font-garamond ">
-      This project aims to build a custom smartwatch designed specifically to improve waking up through a smarter, gentler alarm system. The device uses a heart-rate sensor and gyro sensor to detect lighter sleep within a set wake-up window, allowing it to trigger the alarm at an optimal moment. Instead of loud sound, it uses a sequence of thermal stimulation on the wrist followed by escalating vibrations to wake the user gently without disturbing others. The watch will include a microcontroller, custom firmware, and a 3D-printed enclosure, creating a practical, fully functioning wearable tailored for sleep-focused use.
+    <p class="font-garamond text-xl hover:drop-shadow-[0_0_50px_rgba(255,255,255,0.8)]">
+        The Dawnyx Band is a smartwatch that specifically improves waking up through a smarter, gentler alarm system. The device detects heart rate and orientation to tell you your heart rate in real time and to detect lighter sleep within a set wake-up window, allowing it to trigger the alarm at an optimal moment. Instead of loud sound, it uses a sequence of thermal stimulation on the wrist followed by escalating vibrations to wake the user gently without disturbing others. Built with custom firmware, dedicated sensors, and a purpose-designed enclosure, Dawnyx is optimised specifically for overnight use, prioritising comfort, calm awakenings, and waking on your body’s terms.
     </p>
   </div>
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+
+  <section class="bg-neutral-600 rounded-lg mx-6 px-6 py-6 font-inter text-white text-center" id="Features">
+    <h1 class="text-5xl py-2 font-garamond">Features</h1>
+    <div class="flex justify-between items-center">
+      <div class="bg-neutral-800 px-2 py-1 rounded-lg w-96 h-[33rem] min-w-96 min-h-[37rem] max-w-96 max-h-[35rem]
+       hover:drop-shadow-[0_0_50px_rgba(255,255,255,0.8)]  transition-all duration 500">
+        <h1 class="text-2xl text-center py-4">Intuitive UI</h1>
+        <img src="Intuitive UI.png" alt="Night Alarmface" class="mx-auto w-80 h-auto opacity-80">
+        <p class="py-4">
+          The Dawnyx Band uses an energy-efficient resistive touchscreen which is satisfying to press and reduces accidental taps.
+          Its simple, accessible UI is optimized for the small screen, enabling intentional navigation, full settings control, 
+          and watchface customization.
+        </p>
+      </div>
+      <div class="bg-neutral-800 px-2 py-1 rounded-lg w-96 h-[33rem] min-w-96 min-h-[37rem] max-w-96 max-h-[35rem]
+       hover:drop-shadow-[0_0_50px_rgba(255,255,255,0.8)]  transition-all duration 500">
+        <h1 class="text-2xl text-center py-4">Progressive Wake-Up System</h1>
+        <img src="Recruit Disaffected Progressivists.png" alt="" class="mx-auto w-80 h-auto opacity-80">
+        <p class="py-8">
+          The Dawnyx Band uses multi-stage system to wake the user up as gently and effectively as possible. It begins with subtle warmth to stimulate
+          the wrist, followed by vibrations that start softly and gradually increase in intensity to wake the user at the optimal moment.
+        </p>
+      </div>
+      <div class="bg-neutral-800 px-2 py-1 rounded-lg w-96 h-[33rem] min-w-96 min-h-[37rem] max-w-96 max-h-[35rem]
+       hover:drop-shadow-[0_0_50px_rgba(255,255,255,0.8)] transition-all duration 500">
+        <h1 class="text-2xl text-center py-4">Smart Wake Window</h1>
+        <img src="30 min.png" alt="30 minute smart wake" class="mx-auto w-72 h-auto opacity-80">
+        <p class="py-8">
+          The Dawnyx Band uses a smart wake window to monitor heart rate and movement, detecting lighter stages of sleep within a set time range. This 
+          allows the alarm to trigger at the most natural moment, reducing sleep inertia and making wake-ups feel smoother, calmer, and far less abrupt.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="Benefits">
+    <h1 class="font-garamond text-5xl py-12 mb-12 text-center text-white">
+    Why Dawnyx?
+    </h1>
+    <div class="space-y-10 font-garamond text-lg text-white/85 text-center">
+      <div>
+        <h1 class="text-2xl text-white mb-2">
+          Wake up without stress
+        </h1>
+        <p>
+          Dawnyx replaces sudden alarms with a gradual, body-first wake-up that avoids panic and dazedness.
+        </p>
+      </div>
+      <div class="h-px bg-white/30"></div>
+      <div>
+        <h2 class="text-2xl text-white mb-2">
+          Sleep longer, wake smarter
+        </h2>
+        <p>
+          Instead of forcing a fixed alarm time, Dawnyx waits for lighter sleep within your wake window to reduce grogginess.
+        </p>
+      </div>
+      <div class="h-px bg-white/30"></div>
+
+      <div>
+        <h3 class="text-2xl text-white mb-2">
+          No sound. No disruption.
+        </h3>
+        <p>
+          Thermal and haptic cues wake only you. No noise, no guilt, no disturbing anyone else.
+        </p>
+        <div class="my-4 h-px bg-white/30"></div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="py-24 px-12 text-white" id="Project">
+    <h2 class="font-garamond text-4xl text-center mb-20">
+      Project Timeline
+    </h2>
+
+    <div class="relative max-w-5xl mx-auto grid grid-cols-2 gap-y-24 text-center">
+
+      <div class="col-span-1">
+        <div class="bg-slate-800 rounded-xl p-8 w-112 ml-auto
+        hover:drop-shadow-[0_0_50px_rgba(255,255,255,0.8)]  transition-all duration 500">
+          <h1 class="font-semibold text-2xl mb-2">Concept & Planning</h1>
+          <p class="text-lg text-white/70">
+            Idea formation, documentation, requirements
+          </p>
+        </div>
+      </div>
+
+      <div></div>
+
+      <div class="absolute left-1/2 top-[7rem] text-white/40 text-3xl">
+        ↘
+      </div>
+
+      <div></div>
+
+      <div class="col-span-1">
+        <div class=" bg-slate-800 rounded-xl p-8 w-112 -mt-20 ml-4
+        hover:drop-shadow-[0_0_50px_rgba(255,255,255,0.8)]  transition-all duration 500">
+          <h1 class="font-semibold text-2xl mb-2">Hardware Testing</h1>
+          <p class="text-lg text-white/70">
+            Sensor and peripheral testing and validating
+          </p>
+        </div>
+      </div>
+
+      <div class="absolute left-[calc(50%-10px)] top-[16.7rem] text-white/40 text-3xl">
+        ↙
+      </div>
+
+       <div class="col-span-1">
+        <div class="bg-slate-800 rounded-xl p-8 w-112 ml-auto -mt-20
+        hover:drop-shadow-[0_0_50px_rgba(255,255,255,0.8)]  transition-all duration 500">
+          <h1 class="font-semibold text-2xl mb-2">Firmware Development</h1>
+          <p class="text-lg text-white/70">
+            Wake logic and sensor integration
+          </p>
+        </div>
+      </div>
+
+      <div></div>
+
+      <div class="absolute left-1/2 top-[26rem] text-white/40 text-3xl">
+        ↘
+      </div>
+
+      <div></div>
+
+       <div class="col-span-1">
+        <div class="bg-slate-800 rounded-xl p-8 w-112 ml-4 -mt-20
+        hover:drop-shadow-[0_0_50px_rgba(255,255,255,0.8)]  transition-all duration 500">
+          <h1 class="font-semibold text-2xl mb-2">Assembly</h1>
+          <p class="text-lg text-white/70">
+            Building the watch and coding the software
+          </p>
+        </div>
+      </div>
+      
+      <div class="absolute left-1/2 top-[36rem] text-white/40 text-6xl">
+        ꜜ
+      </div>
+
+      <div class="col-span-2 flex justify-center mt-12">
+        <div class="bg-indigo-800 rounded-xl p-8 w-[29rem] -mt-24 text-center shadow-[0_0_20px_rgba(99,102,241,0.5)]
+        hover:drop-shadow-[0_0_20px_rgba(255,255,255,0.8)]  transition-all duration 500">
+          <h3 class="font-semibold mb-2">Testing & Finalization</h3>
+          <p class="text-sm text-white/80">
+            Refinement, documentation and demonstration
+          </p>
+        </div>
+      </div>
+
+    </div>
+</section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
 </body>
 </html>
